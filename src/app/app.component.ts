@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-todolist';
+  title: string = 'Todo list';
+  name: string = 'Josh';
+  constructor() {
+    console.log('Running on init');
+  }
 }
