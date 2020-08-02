@@ -9,6 +9,10 @@ export class AppComponent {
   title: string = 'Todo list';
   name: string = 'Josh';
   constructor() {
-    console.log('Running on init');
+    console.log('Running on init ' + this.name);
+    this.changeName('Joshua');
+  }
+  changeName(name: string): void {
+    this.name = name;
   }
 }
